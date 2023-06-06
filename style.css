@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./Images/background\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+   
+  
+}
+
+.main{
+   width: 400px;
+   height: 90vh;
+   border-radius: 10px;
+   background-color: #8db0c3;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.userInput{
+    padding: 20px;
+    text-align: center;
+}
+input{
+    width: 14em;
+    height: 2em;
+    border-radius: 1em;
+    outline: none;
+    border: rgb(117, 141, 150);
+    padding: 10px;
+}
+button{
+    width: 5em;
+    height: 2em;
+    padding: 3px;
+    border: 1px;
+    border-radius: 1em;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#showcity{
+    text-align: center;
+}
+
+#showtime{
+    font-size: 14px;
+    text-align: center;
+}
