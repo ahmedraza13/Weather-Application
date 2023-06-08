@@ -2,40 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
- <div class="container">
- <div class="main">
-    <!-- userInput -->
-   <div class="userInput">
-    <form onsubmit="getWeather(); return false">
-     <input type="text" id="cityName" name="cityName" placeholder="Enter Your City Name">
-     <button type="submit">Check</button>
-   </form>
-  </div>
 
-  <!-- show city name -->
-    <div class="city">
-        <h2 id="showcity"></h2>
-     </div>   
+ <section class="container">
 
-     <div class="time">
-        <p id="showtime"></p>
-     </div>
+    <div class="main">
+            <!-- UserInput -->
+      <div class="userInput">
+        <form onsubmit="getWeather(); return false">
+          <input type="text" id="cityName" name="cityName" placeholder="Enter Your City Name">
+          <button type="submit" id="btn">Check</i></button>
+        </form>
+      </div>
+
+        <!-- Result -->
+      <div class="city"> </div>
+      <div class="time"> </div>
+      <div class="description">
+        <img src="" id="icon1">
+        <h2 id="condition"></h2>
+      </div>
+     <div class="ctemp"></div>
+
+      
+
+
     </div>
-</div>
+
+
+  </section>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="./app.mjs" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./app.mjs" type="module"></script>
 </body>
 
 </html>
