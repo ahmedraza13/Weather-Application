@@ -19,8 +19,8 @@ body{
 }
 
 .main{
-   width: 400px;
-   height: 90vh;
+   width: 380px;
+   height: 70vh;
    border-radius: 10px;
    background-color: #8db0c3;
    box-shadow: 7px 8px 19px 4px rgba(141,176,195,0.75);
@@ -72,7 +72,7 @@ body{
 
 
 .city{
-    font-size: 3em;
+    font-size: 2em;
    
 }
 
@@ -97,7 +97,18 @@ body{
     font-size: 1.5em;
 }
 
-.ctemp{
+.curtemp{
     font-size: 6em;
-}   
+} 
+
+@media only screen and (max-width: 600px) {
+    .main {
+        height: 60vh;
+    }
+  }
+
+
+
+
+
 
